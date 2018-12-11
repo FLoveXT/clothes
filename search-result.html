@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="description" content="衣服">
+  <meta name="Keywords" content="衣服">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/search-result.css">
+  <title>搜索结果</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="mui-bar mui-bar-nav cy-header">
+    <h1 class="mui-title">搜索结果</h1>
+  </header>
+  <!-- 底部导航 -->
+  <nav class="mui-bar mui-bar-tab cy-footer">
+    <a class="mui-tab-item" href="index.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+      <span class="mui-icon mui-icon-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+      <span class="mui-icon icon-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="./user/user.html">
+      <span class="mui-icon mui-icon-person"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </nav>
+  <!-- 内容区 -->
+
+  <div class="mui-content mui-scroll-wrapper">
+
+    <div class="mui-scroll">
+      <div class="filter">
+        <div class="price mui-icon mui-icon-arrowdown">价格</div>
+        <div class="quantity mui-icon mui-icon-arrowdown">销量</div>
+      </div>
+      <!-- 结果内容区 -->
+      <div class="result-wrap">
+            
+      </div>
+    </div>
+
+
+  </div>
+  <script src="./lib/mui/js/mui.min.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./lib/artTemplate/template-native.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/search-result.js"></script>
+  <script type="text/template" id="seachResultList">
+    <%for(var i=0;i<result.length;i++){%>
+        <div class="items">
+            <img src="<%=result[i].picAddress%>" alt="">
+            <h2><%=result[i].title%></h2>
+            <div class="sell-price">
+              <p class="now">￥<%=result[i].newPrice%></p>
+              <p class="old">￥<%=result[i].oldPrice%></p>
+            </div>
+            <div class="sell-info">
+              <p class="selled"><%=result[i].sellNum%>人已经付款</p>
+              <p class="enter-info" data-proid="<%=result[i].id%>">查看详情</p>
+            </div>
+          </div>
+      <%}%>
+  </script>
+</body>
+
+</html>

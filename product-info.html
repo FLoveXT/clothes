@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="description" content="衣服">
+  <meta name="Keywords" content="衣服">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/product-info.css">
+  <title>商品详情</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="mui-bar mui-bar-nav cy-header">
+    <h1 class="mui-title">商品详情</h1>
+    <a class="mui-icon mui-icon-search mui-pull-right"></a>
+  </header>
+  <!-- 底部导航 -->
+  <nav class="mui-bar mui-bar-tab cy-footer">
+    <a class="mui-tab-item" href="index.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item jionCart" href="javascript:;">
+      <span class="mui-tab-label">加入购物车</span>
+    </a>
+    <a class="mui-tab-item buyNow" href="javascript:;">
+      <span class="mui-tab-label">立即购买</span>
+    </a>
+  </nav>
+  <!-- 内容区 -->
+  <div class="mui-content">
+    <!-- 图片轮播 -->
+    <div class="mui-slider">
+      <div class="mui-slider-group mui-slider-loop">
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner04.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="./images/banner01.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="./images/banner02.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="./images/banner03.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="./images/banner04.jpg" /></a></div>
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner01.jpg" /></a></div>
+      </div>
+      <div class="mui-slider-indicator">
+        <div class="mui-indicator mui-active"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+      </div>
+    </div>
+    <div class="proInfo-wrap">
+      <div class="price">
+        <p>价格:</p>
+        <p class="newPrice">￥288</p>
+        <p class="oldPrice">￥588</p>
+      </div>
+      <h1>这件衣服真的太牛逼了</h1>
+      <p class="sellNum">已售出100件</p>
+      <div class="mui-row proInfo-list">
+        <div class="mui-col-sm-12 mui-col-xs-12">
+          <li class="mui-table-view-cell">
+            <div class="mui-navigate-right proInfo-list-item" data-role="baseService">
+              <div class="l">服务</div>
+              <div class="r">
+                <p>极速退货</p>
+                <p>正品保证</p>
+                <p>极速退款</p>
+                <p>七天退换</p>
+              </div>
+            </div>
+          </li>
+        </div>
+        <div class="mui-col-sm-12 mui-col-xs-12">
+          <li class="mui-table-view-cell">
+            <div class="mui-navigate-right proInfo-list-item" data-role="choice">
+              <div class="l">选择</div>
+              <div class="r">
+                <p>请选择颜色</p>
+                <p>分类</p>
+                <p>尺码</p>
+              </div>
+            </div>
+          </li>
+        </div>
+        <div class="mui-col-sm-12 mui-col-xs-12">
+          <li class="mui-table-view-cell">
+            <div class="mui-navigate-right proInfo-list-item" data-role="params">
+              <div class="l">参数</div>
+              <div class="r">
+                <p>材质</p>
+                <p>成分含量...</p>
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+      .
+      <div class="proPic">
+        <h3 class="pic-title">商品图片</h3>
+        <img src="./images/clothes02.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="./lib/mui/js/mui.min.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/product-info.js"></script>
+  <div class="widgets-cover">
+    <div class="cover-bg" aria-label="关闭弹层"></div>
+    <div class="cover-content">
+      <div class="cover-body">
+        <section class="baseService">
+          <h4>基础保障</h4>
+          <ul class="mui-table-view">
+            <li class="mui-table-view-cell">该商品由中国人保承保正品保证险</li>
+            <li class="mui-table-view-cell">消费者在满足7天无理由退换货申请条件的前提下，可以提出“7天无理由退换货”的申请</li>
+            <li class="mui-table-view-cell">极速退款是为诚信会员提供的退款退货流程的专享特权，额度是根据每个用户当前的信誉评级情况而定</li>
+          </ul>
+        </section>
+        <section class="choice">
+          <ul class="mui-table-view">
+            <li class="mui-table-view-cells">
+              <h5>颜色分类</h5>
+              <div class="colors">
+                <p class="active">黑色</p>
+                <p>红色</p>
+                <p>白色</p>
+              </div>
+            </li>
+            <li class="mui-table-view-cells">
+              <h5>尺码</h5>
+              <div class="sizes">
+                <p class="active">XS</p>
+                <p>S</p>
+                <p>M</p>
+                <p>L</p>
+              </div>
+            </li>
+            <li class="mui-table-view-cells">
+              <div class="buyNum">
+                <h5>购买数量</h5>
+                <div class="mui-numbox" data-numbox-min='0' data-numbox-max='100'>
+                  <!-- "-"按钮，点击可减小当前数值 -->
+                  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                  <input class="mui-numbox-input" type="number" />
+                  <!-- "+"按钮，点击可增大当前数值 -->
+                  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="params">
+          <h4>基础参数</h4>
+          <table>
+            <tbody>
+              <tr>
+                <th>材质</th>
+                <td>粘胶 </td>
+              </tr>
+              <tr>
+                <th>成分含量</th>
+                <td>71%(含)-80%(含) </td>
+              </tr>
+              <tr>
+                <th>腰型</th>
+                <td>高腰 </td>
+              </tr>
+              <tr>
+                <th>销售渠道类型</th>
+                <td>商场同款(线上线下都销售) </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <div class="cover-footer">
+        <button type="button" class="mui-btn mui-btn-danger confirm">确定</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

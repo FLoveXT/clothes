@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="description" content="衣服">
+  <meta name="Keywords" content="衣服">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <title>搜索中心</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="mui-bar mui-bar-nav cy-header">
+    <h1 class="mui-title">搜索中心</h1>
+  </header>
+  <!-- 底部导航 -->
+  <nav class="mui-bar mui-bar-tab cy-footer">
+    <a class="mui-tab-item" href="index.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+      <span class="mui-icon mui-icon-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+      <span class="mui-icon icon-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="./user/user.html">
+      <span class="mui-icon mui-icon-person"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </nav>
+  <!-- 内容区 -->
+  <div class="mui-content">
+    <!-- 搜索 -->
+    <form class="mui-input-group">
+      <div class="mui-input-row">
+        <input type="text" class="mui-input-search" placeholder="请输入用户名">
+        <button type="button" id="search-btn" class="mui-btn mui-btn-primary">搜索</button>
+      </div>
+    </form>
+    <!-- 搜索历史 -->
+    <div class="search-history">
+      <div class="top">
+        <p class="mui-icon mui-icon-search">搜索历史</p>
+        <p class="mui-icon mui-icon-trash" id="removeSearch">清空历史</p>
+      </div>
+      <div class="search-list">
+        <ul class="mui-table-view" id="searchListWrap">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="./lib/mui/js/mui.min.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./lib/artTemplate/template-native.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/search.js"></script>
+  <script type="text/template" id="searchList">
+    <%for(var i=0;i<result.length;i++){%>
+        <li class="mui-table-view-cell"><%=result[i]%></li>
+      <%}%>
+  </script>
+</body>
+
+</html>

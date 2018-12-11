@@ -1,0 +1,65 @@
+.mui-content {
+  padding: 0 10px;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+}
+.mui-content .mui-scroll {
+  position: relative;
+}
+.mui-content .filter {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  background-color: grey;
+}
+.mui-content .filter div {
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.mui-content .result-wrap {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mui-content .result-wrap .items {
+  width: 48.5%;
+  box-shadow: 1px 1px 1px grey;
+  padding: 5%;
+  margin-bottom: 10px;
+}
+.mui-content .result-wrap .items img {
+  width: 100%;
+}
+.mui-content .result-wrap .items h2 {
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.mui-content .result-wrap .items .sell-price {
+  display: flex;
+  justify-content: space-between;
+}
+.mui-content .result-wrap .items .sell-price .now {
+  color: red;
+}
+.mui-content .result-wrap .items .sell-price .old {
+  text-decoration: line-through;
+}
+.mui-content .result-wrap .items .sell-info .selled {
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.mui-content .result-wrap .items .sell-info .enter-info {
+  text-align: right;
+  font-size: 12px;
+  color: #f02b2b;
+}

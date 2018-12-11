@@ -1,0 +1,44 @@
+.mui-content .mui-slider-indicator .mui-active {
+  background-color: skyblue;
+}
+.mui-content .nav {
+  width: 100%;
+  padding: 10px;
+}
+.mui-content .nav ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mui-content .nav ul li {
+  width: 33.3333333%;
+  height: 80px;
+}
+.mui-content .nav ul li p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 40px;
+  transform: translateY(-50%);
+}
+.mui-content .nav ul li a {
+  text-align: center;
+  display: block;
+  font-size: 12px;
+}
+.mui-content .nav ul li:nth-child(odd) {
+  background-color: #fff;
+}
+.mui-content .nav ul li:nth-child(odd) p {
+  color: #212421;
+}
+.mui-content .nav ul li:nth-child(odd) a {
+  color: grey;
+}
+.mui-content .nav ul li:nth-child(even) {
+  background-color: #212421;
+}
+.mui-content .nav ul li:nth-child(even) p,
+.mui-content .nav ul li:nth-child(even) a {
+  color: #fff;
+}

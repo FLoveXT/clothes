@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="description" content="衣服">
+  <meta name="Keywords" content="衣服">
+  <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/myaddres.css">
+  <title>收货地址</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="mui-bar mui-bar-nav cy-header">
+    <h1 class="mui-title">我的收货地址</h1>
+    <a class="mui-icon mui-icon-search mui-pull-right"></a>
+  </header>
+  <!-- 底部导航 -->
+  <nav class="mui-bar mui-bar-tab cy-footer">
+    <a class="mui-tab-item" href="../index.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="../category.html">
+      <span class="mui-icon mui-icon-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="../cart.html">
+      <span class="mui-icon icon-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="user.html">
+      <span class="mui-icon mui-icon-person"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </nav>
+  <!-- 内容区 -->
+  <div class="mui-content">
+      <a href="add-address.html?isEdit=0" class="addAddress mui-icon mui-icon-plusempty">添加收货地址</a>
+      <ul class="mui-table-view " id="address-wrap">
+         
+      </ul>
+  </div>
+  <script src="../lib/mui/js/mui.min.js"></script>
+  <script src="../lib/zepto/zepto.min.js"></script>
+  <script src="../lib/artTemplate/template-native.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/address.js"></script>
+  <script type="text/template" id="addressList">
+		<% for(var i=0;i<result.length;i++){ %>
+		<li class="mui-table-view-cell mui-media">
+			<div class="mui-slider-right mui-disabled">
+				<span
+					class="mui-btn mui-btn-blue edit-btn"
+					data-id="<%=result[i].id %>">编辑</span>
+				<a
+					href="javascript:;"
+					class="mui-btn mui-btn-red delete-btn"
+					data-id="<%=result[i].id %>">删除</a>
+			</div>
+	        <div class="mui-media-body mui-slider-handle">
+	           	电话：<%=result[i].phoneNum %> 收货人：<%=result[i].receiver %> 
+	            <p class='mui-ellipsis'>
+	            	详细地址：<%=result[i].address %> <%=result[i].addressDetail %>
+	            </p>
+	        </div>
+		</li>
+		<% } %>
+	</script>
+
+</body>
+
+</html>

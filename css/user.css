@@ -1,0 +1,30 @@
+.header-wrap {
+  min-height: 140px;
+  background-image: -webkit-linear-gradient(left, #d3a4ff, #5B00AE);
+  background-image: linear-gradient(to right, #d3a4ff, #5B00AE);
+}
+.header-wrap img {
+  border-radius: 50%;
+}
+.header-wrap .mui-media-body p {
+  font-size: 14px;
+  color: white;
+}
+.order-list .mui-table-view {
+  width: 100%;
+}
+.order-list .mui-table-view .mui-table-view-cell {
+  padding: 11px 10px;
+}
+.order-list .mui-content {
+  background-color: #fff;
+}
+.order-list .mui-content ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.order-list .mui-content ul li {
+  text-align: center;
+  width: 25%;
+}

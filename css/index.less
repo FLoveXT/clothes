@@ -1,0 +1,50 @@
+
+.mui-content{
+  // 轮播图原点样式
+  .mui-slider-indicator{
+    .mui-active{
+      background-color: skyblue;
+    }
+  }
+  // nav 导航链接样式
+  .nav{
+    width: 100%;
+    padding: 10px;
+    ul{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width: 33.3333333%;
+        height: 80px;
+        p{
+          text-align: center;
+          font-size: 18px;
+          font-weight: bolder;
+          margin-top: 40px;
+          transform: translateY(-50%);
+        }
+        a{
+          text-align: center;
+          display: block;
+          font-size: 12px;
+        }
+        &:nth-child(odd){
+          background-color: #fff;
+          p{
+            color:#212421
+          }
+          a{
+            color:grey;
+          }
+        }
+        &:nth-child(even){
+          background-color: #212421;
+          p,a{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

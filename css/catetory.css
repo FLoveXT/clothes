@@ -1,0 +1,56 @@
+.cy-content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  bottom: 50px;
+  background-color: grey;
+}
+.cy-content .con-l {
+  height: 100%;
+  position: relative;
+  width: 80px;
+  float: left;
+  background-color: #fff;
+}
+.cy-content .con-l ul {
+  height: 100%;
+}
+.cy-content .con-l ul li {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #212421;
+  font-size: 18px;
+  font-weight: bold;
+}
+.cy-content .con-l ul li.active {
+  background-color: grey;
+  color: skyblue;
+}
+.cy-content .con-r {
+  height: 100%;
+  position: relative;
+  margin-left: 90px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.cy-content .con-r ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cy-content .con-r ul li {
+  width: 33.333333%;
+  height: 80px;
+}
+.cy-content .con-r ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.cy-content .con-r ul li a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

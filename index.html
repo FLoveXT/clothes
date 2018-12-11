@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="description" content="衣服">
+  <meta name="Keywords" content="衣服">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>卖衣服首页</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="mui-bar mui-bar-nav cy-header">
+    <h1 class="mui-title">爱上衣服</h1>
+    <a href="./search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+  </header>
+  <!-- 底部导航 -->
+  <nav class="mui-bar mui-bar-tab cy-footer">
+    <a class="mui-tab-item mui-active" href="index.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+      <span class="mui-icon mui-icon-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+      <span class="mui-icon icon-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="./user/user.html">
+      <span class="mui-icon mui-icon-person"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </nav>
+  <!-- 内容区 -->
+  <div class="mui-content">
+    <!-- 轮播图 -->
+    <div class="mui-slider">
+      <div class="mui-slider-group mui-slider-loop">
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner04.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="./images/banner01.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="./images/banner02.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="./images/banner03.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="./images/banner04.jpg" /></a></div>
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner01.jpg" /></a></div>
+      </div>
+      <div class="mui-slider-indicator">
+        <div class="mui-indicator mui-active"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+      </div>
+    </div>
+    <!-- 导航链接区 -->
+    <div class="nav">
+      <ul>
+        <li>
+          <p>男装</p>
+          <a href="search-result.html">more>></a>
+        </li>
+        <li>
+          <p>女装</p>
+          <a href="search-result.html">more>></a>
+        </li>
+        <li>
+          <p>童装</p>
+          <a href="search-result.html">more>></a>
+        </li>
+        <li>
+          <p>夏装</p>
+          <a href="search-result.html">more>></a>
+        </li>
+        <li>
+          <p>冬装</p>
+          <a href="search-result.html">more>></a>
+        </li>
+        <li>
+          <p>查看更多</p>
+          <a href="search-result.html">more>></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./lib/mui/js/mui.min.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src=" ./js/index.js"></script> 
+</body> 
+</html>

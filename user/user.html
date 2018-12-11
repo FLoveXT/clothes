@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="description" content="衣服">
+  <meta name="Keywords" content="衣服">
+  <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/user.css">
+  <title>会员中心</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="mui-bar mui-bar-nav cy-header">
+    <h1 class="mui-title">会员中心</h1>
+  </header>
+  <!-- 底部导航 -->
+  <nav class="mui-bar mui-bar-tab cy-footer">
+    <a class="mui-tab-item" href="../index.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="../category.html">
+      <span class="mui-icon mui-icon-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="../cart.html">
+      <span class="mui-icon icon-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item mui-active" href="user.html">
+      <span class="mui-icon mui-icon-person"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </nav>
+  <!-- 内容区 -->
+  <div class="mui-content" id="content">
+
+  </div>
+  <script src="../lib/mui/js/mui.min.js"></script>
+  <script src="../lib/zepto/zepto.min.js"></script>
+  <script src="../lib/artTemplate/template-native.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/user.js"></script>
+  <script type="text/template" id="userInfo">
+    <div class="mui-card header">
+        <!--页眉，放置标题-->
+        <div class="mui-card-header header-wrap">
+          <div class="mui-card-header mui-card-media">
+            <img src="../images/user.jpg" />
+            <div class="mui-media-body">
+              <p>
+                <%=username%>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mui-card order-list">
+        <div class="mui-card-header">
+          <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+              <a class="mui-navigate-right" href="javascript:;">我的订单</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mui-card-content">
+          <div class="mui-content">
+            <ul>
+              <li>
+                <a href="javascript:;">
+                  <span class="mui-icon mui-icon-videocam"></span>
+                  <p>待付款</p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <span class="mui-icon mui-icon-compose"></span>
+                  <p>待发货</p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <span class="mui-icon mui-icon-download"></span>
+                  <p>待收货</p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <span class="mui-icon mui-icon-info"></span>
+                  <p>售后</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mui-card user-info">
+        <div class="mui-card-header">用户信息</div>
+        <div class="mui-card-content">
+          <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+              <a class="mui-navigate-right" href='javascript:;'>我的购物车</a>
+            </li>
+            <li class="mui-table-view-cell">
+              <a class="mui-navigate-right" href="myaddress.html">我的收货地址</a>
+            </li>
+            <li class="mui-table-view-cell">
+              <a class="mui-navigate-right" href="modify-password.html">修改密码</a>
+            </li>
+            <li class="mui-table-view-cell">
+              <a class="mui-navigate-right" id="logout" href='javascript:;'>退出登录</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </script>
+</body>
+
+</html>

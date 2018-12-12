@@ -16,7 +16,15 @@ body.fixed {
   padding: 10px;
 }
 .mui-content .proInfo-wrap .price {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
   justify-content: flex-start;
   height: 50px;
   line-height: 50px;
@@ -40,7 +48,15 @@ body.fixed {
   padding: 15px 0;
 }
 .mui-content .proInfo-wrap .mui-row .mui-navigate-right {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
   justify-content: flex-start;
 }
 .mui-content .proInfo-wrap .mui-row .mui-navigate-right .l {
@@ -49,7 +65,15 @@ body.fixed {
   margin-right: 10px;
 }
 .mui-content .proInfo-wrap .mui-row .mui-navigate-right .r {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
   justify-content: flex-start;
 }
 .mui-content .proInfo-wrap .mui-row .mui-navigate-right .r p {
@@ -128,7 +152,15 @@ body.fixed {
 }
 .widgets-cover .cover-content .cover-body .choice .colors,
 .widgets-cover .cover-content .cover-body .choice .sizes {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .widgets-cover .cover-content .cover-body .choice .colors p,
@@ -146,7 +178,15 @@ body.fixed {
   color: black;
 }
 .widgets-cover .cover-content .cover-body .choice .buyNum {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
   justify-content: space-between;
 }
 .widgets-cover .cover-content .cover-body .params table {

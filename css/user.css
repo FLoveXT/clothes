@@ -20,7 +20,15 @@
   background-color: #fff;
 }
 .order-list .mui-content ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
   justify-content: space-around;
   padding: 10px 0;
 }
